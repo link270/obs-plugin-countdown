@@ -421,11 +421,11 @@ long long CountdownDockWidget::AddTimeToTimer(const char *time_string,
 		sscanf(time_string, "%d:%d:%d", &hours, &minutes, &seconds);
 		break;
 	case 4:
-		sscanf(time_string, "%d:%d:%d:%d", &days, &hours, &minutes,
+		sscanf(time_string, "%d DAYS  %d:%d:%d", &days, &hours, &minutes,
 		       &seconds);
 		break;
 	default:
-		sscanf(time_string, "%d:%d:%d:%d", &days, &hours, &minutes,
+		sscanf(time_string, "%d DAYS  %d:%d:%d", &days, &hours, &minutes,
 		       &seconds);
 		break;
 	}
